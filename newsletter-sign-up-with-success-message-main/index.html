@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .hidden {
+            display: none; /* or use any other CSS to hide the element */
+        }
+  </style>
+</head>
+<body>
+
+  <div class="main">
+    <div class="container ">
+      <div class="success-card hidden">
+        <img src="./assets/images/icon-success.svg" alt="success image" srcset="">
+        <h1>Thanks for subscribing</h1>
+        <p>A confirmation email has been sent to <span class="submitted_email">ash@loremcompany.com.</span> 
+          Please open it and click the button inside to confirm your subscription.</p>
+        <button class="diss-miss-btn">Dismiss message</button>
+      </div>
+      <div class="row from-card">
+        <div class="col-6 content">
+          <div class="text-container">
+            <h1>Stay updated!</h1>
+            <p>Join 60,000+ product managers receiving monthly updates on:</p>
+          </div>
+          <div class="points">
+            <div class="checked">
+              <img src="./assets/images/icon-list.svg" alt="Checked mark icon"/>
+              <p>Product discovery and building what matters</p>
+            </div>
+            <div class="checked">
+              <img src="./assets/images/icon-list.svg" alt="Checked mark icon"/>
+              <p>Measuring to ensure updates are a success</p>
+            </div>
+            <div class="checked">
+              <img src="./assets/images/icon-list.svg" alt="Checked mark icon"/>
+              <p>And much more!</p>
+            </div>
+          </div>
+          <div class="form">
+            <label for="email">Email Address <span class="error-message">Valid email required</span></label>
+            <input id="email" type="email" name="email" id="email" placeholder="email@company.com">
+            
+            <button class="submit-btn" type="submit">Subscribe to monthly newsletter</button>
+          </div>
+        </div>
+        <div class="col-6 image">
+          <img class="mobile" src="./assets/images/illustration-sign-up-mobile.svg" width="100%">
+          <img class="desktop" src="./assets/images/illustration-sign-up-desktop.svg" width="100%">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+
+</body>
+</html>

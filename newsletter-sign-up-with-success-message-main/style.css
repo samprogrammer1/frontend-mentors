@@ -1,0 +1,194 @@
+:root {
+    --background-color: #36384D;
+    --white: #FFFFFF;
+    --tomato: hsl(4, 100%, 67%);
+    --tomato-light: hsl(4, 100%, 95%);
+    --button-color: #232742;
+    --text-color: #242847;
+}
+@font-face {
+    font-family: sans-serif;
+    src: url(./assets/fonts/Roboto-Regular.ttf);
+  }
+* {
+font-family: sans-serif !important;
+}
+body {
+    background-color: var(--background-color);    
+    height: 100%;
+}
+
+p {
+    font-family: sans-serif !important;
+}
+
+.main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: var(--white);
+    border-radius: 30px;
+    width: 55%;
+    height: auto;
+}
+.row {
+    display: flex;
+    border-radius: 30%;
+}
+.success {
+    width: 30%;
+}
+.success-card{
+    padding: 50px;
+}
+
+.success-card img{
+    width: 55px;
+}
+.success-card p {
+    font-size: .8rem;
+}
+.success-card p span {
+    font-weight: 700;
+}
+
+.success-card button {
+    width: 100%;
+    background-color: var(--button-color);
+    padding: 12px;
+    color: white;
+    border-radius: 10px;
+    border: 0;
+}
+
+
+
+.text-container h1 {
+    font-size: 2.3rem;
+    color: var(--text-color);
+}
+.text-container p {
+    font-size: .8rem;
+    font-weight: 400;
+}
+
+.content {
+    padding: 40px 0px 0px 40px;
+}
+.points {
+    margin-bottom: 20px;
+}
+.points .checked {
+    display: flex;
+    margin: 10px 0px;
+}
+.checked p {
+    font-size: .8rem;
+    margin: 0px;
+}
+.image{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    padding: 20px;
+}
+.image .desktop {
+    width: 85% !important;
+    height: auto !important;
+}
+.image .mobile{
+    display: none;
+}
+.checked img {
+    width: 15px;
+    padding-right: 5px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form label {
+    color: var(--text-color);
+    font-size: .7rem;
+    font-weight: 600;
+    margin-bottom: 7px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form input {
+  padding: 12px 10px;
+  border:1px solid rgba(168, 167, 167, 0.832);
+  border-radius:10px;
+  margin-bottom: 10px;
+}
+.form .error-message {
+    color: var(--tomato);
+    font-weight: 700;
+    display: none;
+}
+.form.error input {
+    background-color: var(--tomato-light);
+    border-color: var(--tomato);
+    color: var(--tomato);
+}
+
+.form.error .error-message {
+  display: block;
+}
+  
+
+.form input:focus {
+    outline: none;
+}
+
+.form button {
+    background-color: var(--button-color);
+    color: white;
+    padding: 15px;
+    font-family: sans-serif !important;
+    border-radius: 10px;
+    border: 0;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+@media screen and (max-width : 950px) {
+    .row {
+        flex-direction: column-reverse;
+    }
+    .image {
+        width: auto;
+    }
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block !important;
+    }
+    .content {
+        padding: 0px 40px 0px 40px;
+    }
+}
+
+@media screen and (max-width : 700px) { 
+    .container {
+        width: 80%;
+    }
+}
+@media screen and (max-width : 400px) { 
+    .container {
+        width: 95%;
+    }
+}
+  
