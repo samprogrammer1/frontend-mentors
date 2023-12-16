@@ -11,7 +11,7 @@
     src: url(./assets/fonts/Roboto-Regular.ttf);
   }
 * {
-font-family: sans-serif !important;
+    font-family: sans-serif !important;
 }
 body {
     background-color: var(--background-color);    
@@ -110,11 +110,12 @@ p {
 }
 
 .form {
-    display: flex;
-    flex-direction: column;
+    width: 100%;
+    display: block;
 }
 
 .form label {
+    width: 100%;
     color: var(--text-color);
     font-size: .7rem;
     font-weight: 600;
@@ -124,10 +125,12 @@ p {
 }
 
 .form input {
-  padding: 12px 10px;
-  border:1px solid rgba(168, 167, 167, 0.832);
-  border-radius:10px;
-  margin-bottom: 10px;
+    width: 100%;
+    padding: 12px 10px;
+    box-sizing: border-box;
+    border:1px solid rgba(168, 167, 167, 0.832);
+    border-radius:10px;
+    margin-bottom: 10px;
 }
 .form .error-message {
     color: var(--tomato);
@@ -150,9 +153,10 @@ p {
 }
 
 .form button {
+    width: 100%;
     background-color: var(--button-color);
     color: white;
-    padding: 15px;
+    padding: 15px 10px;
     font-family: sans-serif !important;
     border-radius: 10px;
     border: 0;
